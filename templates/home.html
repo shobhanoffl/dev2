@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Auto Wesite Coder</h1>
+    <i>Kindly mention the details below...</i>
+    <br><br>
+    <div style="border: 5px solid purple; padding: 6px; width: fit-content;">
+    <form action="{% url 'details' %}">
+    <b>Enter the Heading of Your Site</b>
+    <input type="text" name="s_head"><br><br>
+    <b>Enter the Menu of Your Site, Separated by Space</b>
+    <input type="text" name="s_menu" maxlength="60"><br><br>
+    <b>Enter the Body of Your Site</b>
+    <input type="text" name="s_body"><br><br>
+    <input type="submit" value="Submit"><br>
+    <input type="reset" value="Clear">
+    </form>
+    </div>
+</body>
+</html>
